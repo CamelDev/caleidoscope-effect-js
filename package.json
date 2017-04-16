@@ -1,0 +1,32 @@
+{
+  "name": "caleidoscope",
+  "version": "1.0.0",
+  "description": "Caleidoscope JS demo",
+  "main": "index.html",
+  "scripts": {
+    "start": "lite-server",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamelDev/caleidoscope-effect-js.git"
+  },
+  "dependencies": {
+    "paper": "0.10.3"
+  },
+  "keywords": [
+    "js",
+    "paperjs"
+  ],
+  "author": "Kamil Dabrowski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CamelDev/caleidoscope-effect-js/issues"
+  },
+  "homepage": "https://github.com/CamelDev/caleidoscope-effect-js#readme",
+    "devDependencies": {
+
+    "concurrently": "3.4.0",
+    "lite-server": "2.3.0"
+  }
+}
