@@ -11,6 +11,5 @@ Requirements
     https://www.npmjs.com/package/canvas    
 
 Build instructions
-    1. Run global installation script: npm install -g node-gyp
-    2. Build project: npm install from source code root directory
-    3. Test project: npm start
+    1. Build project: npm install from source code root directory
+    2. Test project: npm start

@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- Load the Paper.js library -->
-	<script type="text/javascript" src="node_modules\paper\dist\paper-full.min.js"></script>
-	<!-- Load external PaperScript and associate it with myCanvas -->
-	<script type="text/paperscript" src="js/caleidoscope.js" canvas="caleidoscope-canvas"></script>
-	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="css/styles.css" />	
 </head>
-<body>
-    Caleidoscope canvas test
-	<br />
-	<canvas id="caleidoscope-canvas" data-paper-resize="true"></canvas>
+<body>    
+	<div id="header">Caleidoscope canvas test</div>	
+	<div id="container">	
+		<canvas id="main-caleidoscope-canvas" class="caleidoscope-canvas" data-paper-resize="true"></canvas>	
+	</div>
+
+	<!-- Load the Paper.js library -->
+	<script type="text/javascript" src="node_modules\paper\dist\paper-full.js"></script>
+	<!-- In order to use it effectively we work with JS directly
+	     http://paperjs.org/tutorials/getting-started/using-javascript-directly/ 
+		 Load external PaperScript and associate it with the canvas
+	 -->	
+    <script type="text/javascript" src="js/caleidoscopeHelper.js"></script>		 
+	<script type="text/javascript" src="js/caleidoscope.js"></script>	
+	<script type="text/javascript" src="js/demo.js"  canvas="main-caleidoscope-canvas"></script>	
 </body>
 </html>
