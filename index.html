@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>Caleidoscope canvas test</title>
 	<link rel="stylesheet" href="css/styles.css" />	
 </head>
 <body>    
@@ -9,14 +13,6 @@
 		<canvas id="main-caleidoscope-canvas" class="caleidoscope-canvas" data-paper-resize="true"></canvas>	
 	</div>
 
-	<!-- Load the Paper.js library -->
-	<script type="text/javascript" src="node_modules\paper\dist\paper-full.js"></script>
-	<!-- In order to use it effectively we work with JS directly
-	     http://paperjs.org/tutorials/getting-started/using-javascript-directly/ 
-		 Load external PaperScript and associate it with the canvas
-	 -->	
-    <script type="text/javascript" src="js/caleidoscopeHelper.js"></script>		 
-	<script type="text/javascript" src="js/caleidoscope.js"></script>	
-	<script type="text/javascript" src="js/demo.js"  canvas="main-caleidoscope-canvas"></script>	
+	<script type="text/javascript" src="dist/js/demo-bundle.js"  canvas="main-caleidoscope-canvas"></script>	
 </body>
 </html>

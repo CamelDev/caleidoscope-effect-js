@@ -1,11 +1,14 @@
 
+import { caleidoscope } from './caleidoscope';
+import { caleidoscopeHelper } from './caleidoscope-helper';
+
 // Global vars
 var mainCaleidoscope = null;
 var canvasElemId = "main-caleidoscope-canvas";
 
 // Global events handler                       
 window.onload = function() {
-    mainCaleidoscope = new Caleidoscope(canvasElemId,
+    mainCaleidoscope = new caleidoscope(canvasElemId,
                                         { radiusScale: 0.35,
                                           strokeColor: '#000'}
     );
@@ -13,6 +16,7 @@ window.onload = function() {
     mainCaleidoscope.draw();
 
     window.onresize = function(){
-        caleidoscopeHelper.resizeCaleidoscope(canvasElemId, mainCaleidoscope)
+        let canvas = document.getElementById(canvasElemId);
+        mainCaleidoscope.onresize(canvas.offsetWidth, canvas.offsetHeight);	   
     };
 }

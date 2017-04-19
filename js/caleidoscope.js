@@ -1,7 +1,9 @@
 
+import {paper} from 'paper';
+import { caleidoscopeHelper } from './caleidoscope-helper';
 
 // main object class
-function Caleidoscope (canvasId, params) {
+export var caleidoscope = function(canvasId, params) {
 	
     this.canvas = document.getElementById(canvasId);	
 	if(typeof this.canvas === 'undefined'){

@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "start": "lite-server",
-    "test": "test"
+    "test": "echo \" No tests specified!\" && exit 1",
+    "build": "webpack ./js/demo.js ./dist/js/demo-bundle.js"
   },
   "repository": {
     "type": "git",
@@ -25,8 +26,10 @@
   },
   "homepage": "https://github.com/CamelDev/caleidoscope-effect-js#readme",
     "devDependencies": {
-
     "concurrently": "3.4.0",
-    "lite-server": "2.3.0"
+    "lite-server": "2.3.0",
+    "webpack": "2.2.1",
+    "css-loader": "0.28.0",
+    "style-loader": "0.16.1"
   }
 }
