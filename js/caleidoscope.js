@@ -6,16 +6,16 @@ import { caleidoscopeHelper } from './caleidoscope-helper';
 export var caleidoscope = function(canvasId, params) {
 	
     this.canvas = document.getElementById(canvasId);	
-	if(typeof this.canvas === 'undefined'){
-		throw Exception("Canvas element not found");
+	if( !caleidoscopeHelper.isDefined(this.canvas) ){
+		throw "Canvas element not found";
 	}
 
 	// Let's make it available globally
 	paper.install(window);	
 
-    let self = this;
+    var self = this;
 
-    let defaults = {radiusScale: 0.35,
+    var defaults = {radiusScale: 0.35,
 					strokeColor: '#000',
 				}
     this.paper = paper;
@@ -36,7 +36,7 @@ export var caleidoscope = function(canvasId, params) {
    
     this.onresize = function(width, height){
 		self.paper.project.clear();
-		//self.path.position = self.paper.view.center;
+		self.path.position = self.paper.view.center;
 	    self.paper.view.setViewSize(width, height);
 		self.draw();
 	}

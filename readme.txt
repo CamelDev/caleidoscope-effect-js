@@ -1,5 +1,6 @@
-Caleidoscope Effect v1.0.0
-
+/*...................................
+    Caleidoscope Effect v1.0.0
+...................................*/
 
 Requirements
 

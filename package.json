@@ -6,7 +6,8 @@
   "scripts": {
     "start": "lite-server",
     "test": "echo \" No tests specified!\" && exit 1",
-    "build": "webpack ./js/demo.js ./dist/js/demo-bundle.js"
+    "build": "webpack ./js/demo.js ./dist/js/demo-bundle.js",
+    "build:prod": "webpack ./js/demo.js ./dist/js/demo-bundle.js -p"
   },
   "repository": {
     "type": "git",
