@@ -3,7 +3,7 @@ import {paper} from 'paper';
 import { caleidoscopeHelper } from './caleidoscope-helper';
 
 // main object class
-export var caleidoscope = function(canvasId, params) {
+export const caleidoscope = function(canvasId, params) {
 	
     this.canvas = document.getElementById(canvasId);	
 	if( !caleidoscopeHelper.isDefined(this.canvas) ){
@@ -13,9 +13,9 @@ export var caleidoscope = function(canvasId, params) {
 	// Let's make it available globally
 	paper.install(window);	
 
-    var self = this;
+    let self = this;
 
-    var defaults = {radiusScale: 0.35,
+    let defaults = {radiusScale: 0.35,
 					strokeColor: '#000',
 				}
     this.paper = paper;

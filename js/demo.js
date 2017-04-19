@@ -2,13 +2,14 @@
 import { caleidoscope } from './caleidoscope';
 import { caleidoscopeHelper } from './caleidoscope-helper';
 
-(function() {
-    // local vars
-    var mainCaleidoscope = null;
-    var canvasElemId = "main-caleidoscope-canvas";
+// testing whether IIFE still required
+ {
+    let mainCaleidoscope = null;
+    const canvasElemId = "main-caleidoscope-canvas";
 
     // Global events handler                       
     window.onload = function() {
+
         mainCaleidoscope = new caleidoscope(canvasElemId,
                                             { radiusScale: 0.35,
                                             strokeColor: '#000'}
@@ -21,5 +22,6 @@ import { caleidoscopeHelper } from './caleidoscope-helper';
             if(caleidoscopeHelper.isDefined(canvas)) 
             mainCaleidoscope.onresize(canvas.offsetWidth, canvas.offsetHeight);	   
         }
+
     }
-})();
+}

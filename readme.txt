@@ -16,3 +16,7 @@ Requirements
 Build instructions
     1. Build project: npm install from source code root directory
     2. Test project: npm start
+
+Issues
+
+1. No Internet Explorer support so far...    

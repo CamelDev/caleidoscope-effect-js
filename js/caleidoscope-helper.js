@@ -1,5 +1,5 @@
 
-export var caleidoscopeHelper = new function(){
+export const caleidoscopeHelper = new function(){
     
     this.isDefined = function(ref){
         return typeof ref !== 'undefined';
