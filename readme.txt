@@ -15,7 +15,7 @@ Requirements
 
 Build instructions
     1. Build project: npm install from source code root directory
-    2. Test project: npm start
+    2. Run project: npm start
 
 Issues
 

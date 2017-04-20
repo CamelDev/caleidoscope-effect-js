@@ -1,6 +1,8 @@
 // dependencies
 const path = require("path");
+const webpack = require("webpack");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {  
   entry: './js/demo.js',
@@ -35,6 +37,17 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({ title: 'Tree-shaking' })
+    /*
+    new HtmlWebpackPlugin({ 
+        title: 'Tree-shaking' 
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      // no options so far 
+    },*/
+    new BrowserSyncPlugin({
+      host: 'localhost',
+      port: 9000,
+      server: { baseDir: ['./'] }
+    })
   ]
 };
