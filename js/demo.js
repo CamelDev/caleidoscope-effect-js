@@ -1,13 +1,17 @@
 
+// externals
 import { caleidoscope } from './caleidoscope';
 import { caleidoscopeHelper } from './caleidoscope-helper';
+
+// styles
+import '../css/styles.css';
 
 // testing whether IIFE still required
  {
     let mainCaleidoscope = null;
     const canvasElemId = "main-caleidoscope-canvas";
 
-    // Global events handler                       
+    // global events handler                       
     window.onload = function() {
 
         mainCaleidoscope = new caleidoscope(canvasElemId,
