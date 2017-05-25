@@ -16,7 +16,7 @@ export const caleidoscope = function(canvasId, params) {
     let self = this;
 
     let defaults = {radiusScale: 0.35,
-					strokeColor: '#000',
+					strokeColor: '#aa0000',
 				}
     this.paper = paper;
 	this.params = Object.assign(defaults, params);						

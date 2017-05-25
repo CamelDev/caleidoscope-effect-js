@@ -16,7 +16,7 @@ import '../css/styles.css';
 
         mainCaleidoscope = new caleidoscope(canvasElemId,
                                             { radiusScale: 0.35,
-                                            strokeColor: '#000'}
+                                            strokeColor: '#a0b'}
         );
 
         mainCaleidoscope.draw();
