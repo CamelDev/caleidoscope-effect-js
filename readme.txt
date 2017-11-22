@@ -5,7 +5,7 @@ About
 
 Requirements
     1. Node.js 6.10+ - Download from: https://nodejs.org/en/download/
-    2. Python 2.7.x - Doanload from: https://www.python.org/downloads/release/python-2713/ 
+    2. Python 2.7.x - Download from: https://www.python.org/downloads/release/python-2713/ 
     3. Node-canvas: https://www.npmjs.com/package/canvas    
        In order to use paperjs, please follow "canvas" dependency installation instructions.   
        GTK+ 2.2x

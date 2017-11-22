@@ -14,7 +14,7 @@
     "url": "git+https://github.com/CamelDev/caleidoscope-effect-js.git"
   },
   "dependencies": {
-    "paper": "0.10.3"
+    "paper": "0.11.5"
   },
   "keywords": [
     "js",
@@ -28,16 +28,16 @@
   "homepage": "https://github.com/CamelDev/caleidoscope-effect-js#readme",
   "devDependencies": {
     "babel-core": "^6.24.1",
-    "babel-loader": "^6.4.1",
+    "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
     "browser-sync-webpack-plugin": "^1.1.4",
-    "concurrently": "3.4.0",
-    "css-loader": "0.28.0",
+    "concurrently": "3.5.1",
+    "css-loader": "0.28.7",
     "html-webpack-plugin": "^2.28.0",
     "lite-server": "2.3.0",
     "path": "^0.12.7",
-    "style-loader": "0.16.1",
-    "webpack": "2.2.1",
+    "style-loader": "0.19.0",
+    "webpack": "3.8.1",
     "webpack-dev-server": "^2.4.2"
   }
 }
